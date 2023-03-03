@@ -12,8 +12,42 @@ main section:nth-child(3){
 	border: solid 3px #000;
 }
 
+/* FAQ */
 main section:nth-child(4){
-	border: solid 3px #000;
+	border: solid 1px tomato;
+}
+
+main section:nth-child(4)>h1{
+	border: solid 4px red;
+	padding: 15px;
+	max-width: 800px;
+	margin:0 auto 10px;
+}
+
+main section:nth-child(4)>dl{
+	border: solid 3px green;
+	padding: 15px;
+	display: block;
+	max-width: 800px;
+	margin:0 auto;
+}
+
+main section:nth-child(4) dt{
+	margin-bottom: .5rem;
+}
+
+main section:nth-child(4) dt::before{
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 10px;
+	margin-right: 10px;
+	background-color: #FB5;
+}
+
+main section:nth-child(4) dd{
+	margin-bottom: 0.5rem;
+	margin-left: 30px;
 }
 
 main section:nth-child(5){
