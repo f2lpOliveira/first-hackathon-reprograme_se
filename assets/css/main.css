@@ -14,26 +14,35 @@ main section:nth-child(3){
 
 /* FAQ */
 main section:nth-child(4){
-	border: solid 1px tomato;
+	border: solid 1px white;
 }
 
 main section:nth-child(4)>h1{
-	border: solid 4px red;
 	padding: 15px;
 	max-width: 800px;
 	margin:0 auto 10px;
+	font-size: 32px;
+	font-family: sans-serif;
+	color: #5b7fb9;
 }
 
 main section:nth-child(4)>dl{
-	border: solid 3px green;
 	padding: 15px;
 	display: block;
-	max-width: 800px;
-	margin:0 auto;
+	max-width: 1000px;
+	margin-left: auto;
 }
 
 main section:nth-child(4) dt{
 	margin-bottom: .5rem;
+	font-weight: bolder;
+	color:#c27fb1;
+	cursor: pointer;
+}
+
+main section:nth-child(4) dt::after{
+	content: url(../img/svgFaq/arrow-90deg-down.svg);
+	margin-left: .3rem
 }
 
 main section:nth-child(4) dt::before{
@@ -42,7 +51,7 @@ main section:nth-child(4) dt::before{
 	width: 20px;
 	height: 10px;
 	margin-right: 10px;
-	background-color: #FB5;
+	background-color: #5b7fb9;
 }
 
 main section:nth-child(4) dd{
