@@ -1,5 +1,7 @@
 footer {
   padding: 10px 0 50px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 footer img {
@@ -15,7 +17,10 @@ footer form {
 
 .div-form {
   background: var(--color-third);
-  opacity: 70%;
   border-radius: 10px;
-  width: 80%;
+  width: 60%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto !important;
+  margin-right: 25px !important;
 }
