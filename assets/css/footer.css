@@ -12,10 +12,7 @@ footer form {
   grid-column: 2/3;
   width: 350px;
   margin: 0 auto;
-  padding: 10px 0;
-}
-
-.div-form {
+  padding: 10px 30px;
   background: var(--color-third);
   border-radius: 10px;
   width: 60%;
