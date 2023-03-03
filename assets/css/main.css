@@ -80,7 +80,7 @@ main section:nth-child(4) dt{
 }
 
 main section:nth-child(4) dt::after{
-	content: url(../img/svgFaq/arrow-90deg-down.svg);
+	content: url(../img/imgs/svgs/arrow-90deg-down.svg);
 	margin-left: .3rem
 }
 
@@ -101,9 +101,39 @@ main section:nth-child(4) dd {
 main section:nth-child(5) {
   border: solid 3px #000;
 }
-
+/* Seção de Noticias */
 main section:nth-child(6) {
-  border: solid 3px #000;
+  display: flex;
+  flex-wrap: wrap;
+  flex:1 1 200px;
+  justify-content: center;
+  padding: 15px;
+}
+
+main section:nth-child(6) div{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+main section:nth-child(6) img{
+  width: 55%;
+  border-radius: 10px;
+  outline: 3px solid var(--color-third);
+  outline-offset: 2px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+main section:nth-child(6) article{
+  width: 55%;
+  padding-left: .5rem;
+}
+
+main section:nth-child(6) article p{
+  margin-top: 2rem;
 }
 
 main section:nth-child(7) {
