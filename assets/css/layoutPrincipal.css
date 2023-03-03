@@ -14,7 +14,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 1fr minmax(600px, 1300px) 1fr;
   grid-template-rows: auto auto auto;
 }
 
