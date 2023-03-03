@@ -1,5 +1,21 @@
-footer form{
-	grid-column: 2/3;
-	border: solid 10px tomato;
-	height: 300px;
+footer {
+  padding: 10px 0 50px;
+}
+
+footer img {
+  width: 150px;
+}
+
+footer form {
+  grid-column: 2/3;
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.div-form {
+  background: var(--color-third);
+  opacity: 70%;
+  border-radius: 10px;
+  width: 80%;
 }

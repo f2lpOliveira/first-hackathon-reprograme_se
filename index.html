@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reprograme-se</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
       href="/assets/css/layoutPrincipal.css"
       rel="stylesheet"
       type="text/css" />
@@ -15,7 +18,7 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="header-container">
         <h1>
           <img
             src="assets/img/logo-reprogramese/preferencial-horizontal.png"
@@ -108,16 +111,33 @@
       <section></section>
     </main>
     <footer>
-      <img src="" alt="" />
-      <form action="">
-        <label>Nome</label>
-        <input />
-        <label>Email</label>
-        <input />
-        <label>Mensagem</label>
-        <textarea></textarea>
-        <button>Enviar</button>
-      </form>
+      <img
+        src="assets/img/logo-reprogramese/preferencial-vertical.png"
+        alt="Logotipo Reprograme-se" />
+      <div class="div-form">
+        <form
+          action="mailto:nome@email.com.br"
+          method="POST"
+          enctype="text/plain">
+          <label class="form-label">Nome e Sobrenome</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nome e Sobrenome"
+            required />
+          <label class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="nome@email.com.br"
+            required />
+          <label class="form-label">Mensagem</label>
+          <textarea class="form-control" required></textarea>
+          <div class="col-12 d-flex flex-row-reverse">
+            <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+          </div>
+        </form>
+      </div>
     </footer>
 
     <script type="module" src="/assets/js/script.js"></script>

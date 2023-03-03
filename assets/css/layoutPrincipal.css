@@ -31,7 +31,6 @@ main {
 }
 
 footer {
-  border: solid 1px tomato;
   grid-column: 2/3;
   grid-row: 3;
   display: grid;
