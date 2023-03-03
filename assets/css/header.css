@@ -1,3 +1,33 @@
-header ul{
-	display: flex;
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header nav {
+  position: absolute;
+  top: 36%;
+  right: 0;
+}
+
+.logotipo {
+  width: 180px;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
 }
