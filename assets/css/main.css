@@ -118,6 +118,7 @@ main section:nth-child(6) div{
   padding: 40px;
 }
 
+/* IMAGEM */
 main section:nth-child(6) img{
   width: 55%;
   border-radius: 10px;
@@ -127,13 +128,34 @@ main section:nth-child(6) img{
   margin-right: 10px;
 }
 
+/* NOTICIA */
 main section:nth-child(6) article{
   width: 55%;
   padding-left: .5rem;
 }
 
+/* TITULO */
+main section:nth-child(6) article h2{
+  color: black;
+}
+
+/* PUBLICADO */
 main section:nth-child(6) article p{
   margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* DATA */
+main section:nth-child(6) article i{
+  color: var(--color-third);
+  font-style: normal;
+  font-weight: lighter;
+}
+
+/* HORA */
+main section:nth-child(6) article span{
+  color: var(--color-primary);
+  font-weight: lighter;
 }
 
 main section:nth-child(7) {
