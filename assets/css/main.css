@@ -1,63 +1,102 @@
 /*Todas as seções do main*/
 
-main section:nth-child(1){
-	border: solid 3px #000;
+main section:nth-child(1) {
+  border: solid 3px #000;
 }
 
-main section:nth-child(2){
-	border: solid 3px #000;
+main section:nth-child(2) {
+  border: solid 3px #000;
 }
 
-main section:nth-child(3){
-	border: solid 3px #000;
+/* DEPOIMENTOS  */
+main section:nth-child(3) .depoimentos {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+main section:nth-child(3) .depoimentos li img {
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 100px;
+}
+
+main section:nth-child(3) .depoimentos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+main section:nth-child(3) .depoimentos li h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main section:nth-child(3) .depoimentos li h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+main section:nth-child(3) .descricao {
+  font-size: 14px;
+  text-align: justify;
 }
 
 /* FAQ */
-main section:nth-child(4){
-	border: solid 1px tomato;
+main section:nth-child(4) {
+  border: solid 1px tomato;
 }
 
-main section:nth-child(4)>h1{
-	border: solid 4px red;
-	padding: 15px;
-	max-width: 800px;
-	margin:0 auto 10px;
+main section:nth-child(4) > h1 {
+  border: solid 4px red;
+  padding: 15px;
+  max-width: 800px;
+  margin: 0 auto 10px;
 }
 
-main section:nth-child(4)>dl{
-	border: solid 3px green;
-	padding: 15px;
-	display: block;
-	max-width: 800px;
-	margin:0 auto;
+main section:nth-child(4) > dl {
+  border: solid 3px green;
+  padding: 15px;
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-main section:nth-child(4) dt{
-	margin-bottom: .5rem;
+main section:nth-child(4) dt {
+  margin-bottom: 0.5rem;
 }
 
-main section:nth-child(4) dt::before{
-	content: '';
-	display: inline-block;
-	width: 20px;
-	height: 10px;
-	margin-right: 10px;
-	background-color: #FB5;
+main section:nth-child(4) dt::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: #fb5;
 }
 
-main section:nth-child(4) dd{
-	margin-bottom: 0.5rem;
-	margin-left: 30px;
+main section:nth-child(4) dd {
+  margin-bottom: 0.5rem;
+  margin-left: 30px;
 }
 
-main section:nth-child(5){
-	border: solid 3px #000;
+main section:nth-child(5) {
+  border: solid 3px #000;
 }
 
-main section:nth-child(6){
-	border: solid 3px #000;
+main section:nth-child(6) {
+  border: solid 3px #000;
 }
 
-main section:nth-child(7){
-	border: solid 3px #000;
+main section:nth-child(7) {
+  border: solid 3px #000;
 }
