@@ -47,11 +47,15 @@
       <section>
         <ul class="depoimentos">
           <li>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1241/1241129.png?w=826&t=st=1677864186~exp=1677864786~hmac=e95822a9c5a81cf25a692dbb80460aa0e5c0684567308c03b3cc49e33c61376e"
-              alt="Aluno Depoente" />
-            <h2>Jaquim Poeta</h2>
-            <h4>Desenvolverdor Back-End</h4>
+            <div class="depoimento">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1241/1241129.png?w=826&t=st=1677864186~exp=1677864786~hmac=e95822a9c5a81cf25a692dbb80460aa0e5c0684567308c03b3cc49e33c61376e"
+                alt="Aluno Depoente" />
+              <div class="info">
+                <h2>Jaquim Poeta</h2>
+                <h4>Desenvolvedor Back-End</h4>
+              </div>
+            </div>
             <p class="descricao">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
               iusto iure, illum nobis, optio magnam ex ipsum ipsa veniam animi
@@ -60,11 +64,15 @@
             </p>
           </li>
           <li>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1241/1241115.png?w=740&t=st=1677866194~exp=1677866794~hmac=e744155e00b589a153ba5c20edc3d9b1d0f1a0b2497dda74877ded9123a5ecdc"
-              alt="Aluna Depoente" />
-            <h2>Marenice Tinquim</h2>
-            <h4>UI/UX</h4>
+            <div class="depoimento">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1241/1241115.png?w=740&t=st=1677866194~exp=1677866794~hmac=e744155e00b589a153ba5c20edc3d9b1d0f1a0b2497dda74877ded9123a5ecdc"
+                alt="Aluna Depoente" />
+              <div class="info">
+                <h2>Marenice Tinquim</h2>
+                <h4>UI/UX</h4>
+              </div>
+            </div>
             <p class="descricao">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
               iusto iure, illum nobis, optio magnam ex ipsum ipsa veniam animi
@@ -74,6 +82,7 @@
           </li>
         </ul>
       </section>
+
       <!-- FAQ -->
       <section>
         <h1>FAQ - Respostas a perguntas frequentes</h1>
@@ -108,14 +117,16 @@
       <!-- NOTICIAS  -->
       <section>
         <div>
-          <img src="assets/img/imgs/jpg/Otimizado-codeImg.jpg" alt="">
+          <img src="assets/img/imgs/jpg/Otimizado-codeImg.jpg" alt="" />
           <article>
             <h2>Titulo</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia laboriosam vero suscipit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            mollitia laboriosam vero suscipit.
             <p>Publicado: <i>10/04/2023 </i><span>16:50</span></p>
           </article>
         </div>
         <div>
+
           <img src="assets/img/imgs/jpg/Otimizado-codeImg.jpg" alt="">
           <article>
             <h2>Titulo</h2>
@@ -147,30 +158,43 @@
       <img
         src="assets/img/logo-reprogramese/preferencial-vertical.png"
         alt="Logotipo Reprograme-se" />
-      <div class="div-form">
-        <form
-          action="mailto:nome@email.com.br"
-          method="POST"
-          enctype="text/plain">
-          <label class="form-label">Nome e Sobrenome</label>
+      <form
+        action="mailto:contato@reprogramese.com.br"
+        method="POST"
+        enctype="text/plain">
+        <div class="form-group">
+          <label for="nomeCompleto">Nome e Sobrenome</label>
           <input
             type="text"
+            id="nomeCompleto"
+            name="nomeCompleto"
             class="form-control"
-            placeholder="Nome e Sobrenome"
+            placeholder="Digite seu nome completo"
             required />
-          <label class="form-label">Email</label>
+        </div>
+        <div class="form-group">
+          <label for="emailContato">E-mail</label>
           <input
             type="email"
+            id="emailContato"
+            name="emailContato"
             class="form-control"
-            placeholder="nome@email.com.br"
+            placeholder="Digite seu e-mail"
             required />
-          <label class="form-label">Mensagem</label>
-          <textarea class="form-control" required></textarea>
-          <div class="col-12 d-flex flex-row-reverse">
-            <button type="submit" class="btn btn-primary mt-2">Enviar</button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="form-group">
+          <label for="mensagemContato">Mensagem</label>
+          <textarea
+            id="mensagemContato"
+            name="mensagemContato"
+            class="form-control"
+            placeholder="Digite sua mensagem"
+            required></textarea>
+        </div>
+        <div class="form-group d-flex justify-content-end">
+          <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+        </div>
+      </form>
     </footer>
 
     <script type="module" src="/assets/js/script.js"></script>
