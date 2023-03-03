@@ -1,0 +1,29 @@
+/*Todas as seções do main*/
+
+main section:nth-child(1){
+	border: solid 3px #000;
+}
+
+main section:nth-child(2){
+	border: solid 3px #000;
+}
+
+main section:nth-child(3){
+	border: solid 3px #000;
+}
+
+main section:nth-child(4){
+	border: solid 3px #000;
+}
+
+main section:nth-child(5){
+	border: solid 3px #000;
+}
+
+main section:nth-child(6){
+	border: solid 3px #000;
+}
+
+main section:nth-child(7){
+	border: solid 3px #000;
+}
