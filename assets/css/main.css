@@ -1,7 +1,6 @@
 /*Todas as seções do main*/
 
 main section:nth-child(1) {
-  border: solid 3px #000;
 }
 
 main section:nth-child(2) {
@@ -290,11 +289,13 @@ main section:nth-child(7) {
   margin: 120px 10%;
 }
 
+
 .divNoticias div:nth-child(1){
   padding: 15px;
   width: 39%;
   margin-right: 20px;
 }
+
 
 .divNoticias div:nth-child(1) h1{
   margin-bottom: 1.3rem;
@@ -304,6 +305,7 @@ main section:nth-child(7) {
   text-shadow: #333 2px 2px 2px;
 }
 
+
 .divNoticias div:nth-child(1) hr{
   margin-bottom: 1rem;
 }
@@ -312,24 +314,26 @@ main section:nth-child(7) {
   color: white;
   padding: 15px 5%;
   line-height: 1.5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
 .divNoticias div:nth-child(1) article p{
   text-align: center;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   font-weight: bolder;
   font-size: 20px;
   color: var(--color-primary);
 }
 
 /* arrow para direita */
+
 .divNoticias .seta{
   width: 20%;
   display: flex;
   justify-content: center;
 }
+
 .divNoticias .seta>img{
   width: 20%;
 }
@@ -342,16 +346,18 @@ main section:nth-child(7) {
 .divNoticias div:nth-child(3) p{
   text-align: center;
   line-height: 1.5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   margin-bottom: 1.3rem;
   color: white;
   text-shadow: #333 2px 2px 2px;
 }
 
+
 .divNoticias div:nth-child(3) p::before{
   content: url(../img/imgs/svgs/check.svg);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
+
 
 .divNoticias div:nth-child(4){
   width: 100%;
@@ -360,6 +366,7 @@ main section:nth-child(7) {
 }
 
 /* Botão de inscrição */
+
 .divNoticias div:nth-child(4) a{
   background-color: #1a7fbe;
   color: white;
@@ -372,12 +379,13 @@ main section:nth-child(7) {
   margin-top: 2.3rem;
 }
 
+
 .divNoticias div:nth-child(4) a:hover{
   background-color: #1a7fbe66;
 }
 
 .divNoticias div:nth-child(4) a:active{
   position: relative;
-  left: .3rem;
-  top: .3rem;
+  left: 0.3rem;
+  top: 0.3rem;
 }
