@@ -246,6 +246,87 @@ main section:nth-child(6) article span {
   font-weight: lighter;
 }
 
+/* BOTÃO DE INSCRIÇÃO ACTION e IFES*/
 main section:nth-child(7) {
-  border: solid 3px #000;
+  border: solid 1px white;
+  background-color: var(--color-third);
+}
+
+main section:nth-child(7) .ligaFlex{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Texto imagem e titulo */
+
+.ligaFlex{
+  margin: 120px 10%;
+}
+
+.ligaFlex div:nth-child(1){
+  padding: 15px;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.ligaFlex div:nth-child(1) h1{
+  margin-bottom: 1.3rem;
+  text-align: center;
+  font-family: var(--font-padrao);
+  color: white;
+  text-shadow: #333 2px 2px 2px;
+}
+
+.ligaFlex div:nth-child(1) hr{
+  margin-bottom: 1rem;
+}
+
+.ligaFlex div:nth-child(1) article{
+  color: white;
+  padding: 15px 5%;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  text-align: center;
+}
+
+.ligaFlex div:nth-child(1) article p{
+  text-align: center;
+  margin-top: .8rem;
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+/* arrow para direita */
+.ligaFlex .seta{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.ligaFlex .seta>img{
+  width: 20%;
+}
+
+/* vantagens de se fazer o reprograma-se */
+.ligaFlex div:nth-child(3){
+  width: 40%;
+}
+
+.ligaFlex div:nth-child(3) p{
+  text-align: center;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.ligaFlex div:nth-child(3) p{
+  text-align: center;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  margin-bottom: 1.3rem;
+}
+
+.ligaFlex div:nth-child(3) p::before{
+  content: url(../img/imgs/svgs/check.svg);
+  margin-right: .5rem;
 }
