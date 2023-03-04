@@ -6,27 +6,38 @@
   z-index: 999;
 }
 
-.header-container {
-  position: relative;
-  width: 100%;
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 107px;
-  margin: 0 auto;
   background-color: #fff;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  z-index: 999;
 }
 
-header nav {
-  position: absolute;
-  top: 36%;
-  right: 0;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 .logotipo {
   width: 180px;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
 header nav ul li {
-  display: inline;
-  margin: 0 0 0 15px;
+  margin: 0 15px;
 }
 
 header nav ul li a {
