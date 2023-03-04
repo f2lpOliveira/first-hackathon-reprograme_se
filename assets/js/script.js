@@ -1,3 +1,3 @@
 //scrollSuave ativo.
 import scrollSuave from "./scrollSuave.js";
-scrollSuave();
+import acordionList from "./acordionList.js"
