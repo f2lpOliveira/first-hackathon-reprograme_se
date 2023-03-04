@@ -1,8 +1,69 @@
 /*Todas as seções do main*/
 
+/* APRESENTAÇÃO */
 main section:nth-child(1) {
 }
 
+.landing-section {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  text-align: center;
+}
+.landing-block {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.landing-title {
+  font-size: 48px;
+  margin: 0;
+}
+.landing-description {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.landing-formation {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.landing-more-info {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.landing-button {
+  display: inline-block;
+  background-color: #da0037;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease;
+}
+.landing-button:hover {
+  background-color: #ff2b67;
+}
+.landing-image {
+  max-width: 100%;
+  margin-top: 50px;
+}
+.landing-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #da0037;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* GRADE CURRÍCULAR */
 main section:nth-child(2) {
   border: solid 3px #000;
 }
@@ -80,33 +141,33 @@ main section:nth-child(4) dt {
   font-weight: bolder;
   color: var(--color-third);
   font-size: 23px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   cursor: pointer;
 }
 main section:nth-child(4) dt:active {
   opacity: 0.4;
 }
 
-main section:nth-child(4) dd{
+main section:nth-child(4) dd {
   padding-bottom: 1.3rem;
   margin-left: 30px;
   text-align: left;
   line-height: 1.6rem;
   /* word-spacing: 2px; */
-  letter-spacing: calc(.1rem - 1px);
+  letter-spacing: calc(0.1rem - 1px);
   display: none;
 }
 
-.motrarRespostaFaq{
+.motrarRespostaFaq {
   display: block !important;
   animation: slideDown 1.3s;
 }
 
 @keyframes slideDown {
-  from{
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
@@ -281,7 +342,7 @@ main section:nth-child(7) {
 }
 
 /* Texto imagem e titulo */
-.divNoticias{
+.divNoticias {
   display: flex !important;
   flex-wrap: wrap;
   justify-content: center;
@@ -289,15 +350,13 @@ main section:nth-child(7) {
   margin: 120px 10%;
 }
 
-
-.divNoticias div:nth-child(1){
+.divNoticias div:nth-child(1) {
   padding: 15px;
   width: 39%;
   margin-right: 20px;
 }
 
-
-.divNoticias div:nth-child(1) h1{
+.divNoticias div:nth-child(1) h1 {
   margin-bottom: 1.3rem;
   text-align: center;
   font-family: var(--font-padrao);
@@ -305,12 +364,10 @@ main section:nth-child(7) {
   text-shadow: #333 2px 2px 2px;
 }
 
-
-.divNoticias div:nth-child(1) hr{
-  margin-bottom: 1rem;
+.divNoticias div:nth-child(1) hr {
 }
 
-.divNoticias div:nth-child(1) article{
+.divNoticias div:nth-child(1) article {
   color: white;
   padding: 15px 5%;
   line-height: 1.5rem;
@@ -318,7 +375,7 @@ main section:nth-child(7) {
   text-align: center;
 }
 
-.divNoticias div:nth-child(1) article p{
+.divNoticias div:nth-child(1) article p {
   text-align: center;
   margin-top: 0.8rem;
   font-weight: bolder;
@@ -328,22 +385,22 @@ main section:nth-child(7) {
 
 /* arrow para direita */
 
-.divNoticias .seta{
+.divNoticias .seta {
   width: 20%;
   display: flex;
   justify-content: center;
 }
 
-.divNoticias .seta>img{
+.divNoticias .seta > img {
   width: 20%;
 }
 
 /* vantagens de se fazer o reprograma-se */
-.divNoticias div:nth-child(3){
+.divNoticias div:nth-child(3) {
   width: 37%;
 }
 
-.divNoticias div:nth-child(3) p{
+.divNoticias div:nth-child(3) p {
   text-align: center;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
@@ -352,14 +409,12 @@ main section:nth-child(7) {
   text-shadow: #333 2px 2px 2px;
 }
 
-
-.divNoticias div:nth-child(3) p::before{
+.divNoticias div:nth-child(3) p::before {
   content: url(../img/imgs/svgs/check.svg);
   margin-right: 0.5rem;
 }
 
-
-.divNoticias div:nth-child(4){
+.divNoticias div:nth-child(4) {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -367,7 +422,7 @@ main section:nth-child(7) {
 
 /* Botão de inscrição */
 
-.divNoticias div:nth-child(4) a{
+.divNoticias div:nth-child(4) a {
   background-color: #1a7fbe;
   color: white;
   padding: 15px 120px;
@@ -379,12 +434,11 @@ main section:nth-child(7) {
   margin-top: 2.3rem;
 }
 
-
-.divNoticias div:nth-child(4) a:hover{
+.divNoticias div:nth-child(4) a:hover {
   background-color: #1a7fbe66;
 }
 
-.divNoticias div:nth-child(4) a:active{
+.divNoticias div:nth-child(4) a:active {
   position: relative;
   left: 0.3rem;
   top: 0.3rem;
