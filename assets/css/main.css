@@ -252,21 +252,18 @@ main section:nth-child(7) {
   background-color: var(--color-third);
 }
 
-main section:nth-child(7) .ligaFlex{
+/* Texto imagem e titulo */
+.ligaFlex{
   display: flex !important;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-
-/* Texto imagem e titulo */
-
-.ligaFlex{
   margin: 120px 10%;
 }
 
 .ligaFlex div:nth-child(1){
   padding: 15px;
-  width: 40%;
+  width: 39%;
   margin-right: 20px;
 }
 
@@ -310,13 +307,7 @@ main section:nth-child(7) .ligaFlex{
 
 /* vantagens de se fazer o reprograma-se */
 .ligaFlex div:nth-child(3){
-  width: 40%;
-}
-
-.ligaFlex div:nth-child(3) p{
-  text-align: center;
-  line-height: 1.5rem;
-  letter-spacing: .1rem;
+  width: 37%;
 }
 
 .ligaFlex div:nth-child(3) p{
@@ -324,9 +315,40 @@ main section:nth-child(7) .ligaFlex{
   line-height: 1.5rem;
   letter-spacing: .1rem;
   margin-bottom: 1.3rem;
+  color: white;
+  text-shadow: #333 2px 2px 2px;
 }
 
 .ligaFlex div:nth-child(3) p::before{
   content: url(../img/imgs/svgs/check.svg);
   margin-right: .5rem;
+}
+
+.ligaFlex div:nth-child(4){
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Botão de inscrição */
+.ligaFlex div:nth-child(4) a{
+  background-color: #1a7fbe;
+  color: white;
+  padding: 15px 120px;
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: #333 2px 2px 1px;
+  border-radius: 5px;
+  box-shadow: #111 2px 2px 2px;
+  margin-top: 2.3rem;
+}
+
+.ligaFlex div:nth-child(4) a:hover{
+  background-color: #1a7fbe66;
+}
+
+.ligaFlex div:nth-child(4) a:active{
+  position: relative;
+  left: .3rem;
+  top: .3rem;
 }
