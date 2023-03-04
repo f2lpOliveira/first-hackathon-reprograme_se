@@ -71,18 +71,52 @@ main section:nth-child(4) > h1 {
 main section:nth-child(4) > dl {
   padding: 15px;
   display: block;
-  max-width: 1000px;
-  margin-left: auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 main section:nth-child(4) dt {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
   font-weight: bolder;
-  color: #c27fb1;
+  color: var(--color-third);
+  font-size: 23px;
+  letter-spacing: .1rem;
   cursor: pointer;
+}
+main section:nth-child(4) dt:active {
+  opacity: 0.4;
+}
+
+main section:nth-child(4) dd{
+  padding-bottom: 1.3rem;
+  margin-left: 30px;
+  text-align: left;
+  line-height: 1.6rem;
+  /* word-spacing: 2px; */
+  letter-spacing: calc(.1rem - 1px);
+  display: none;
+}
+
+.motrarRespostaFaq{
+  display: block !important;
+  animation: slideDown 1.3s;
+}
+
+@keyframes slideDown {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 main section:nth-child(4) dt::after {
+  content: url(../img/imgs/svgs/arrow-90deg-up.svg);
+  margin-left: 0.3rem;
+}
+
+main section:nth-child(4) dt.ativo::after {
   content: url(../img/imgs/svgs/arrow-90deg-down.svg);
   margin-left: 0.3rem;
 }
@@ -94,11 +128,6 @@ main section:nth-child(4) dt::before {
   height: 10px;
   margin-right: 10px;
   background-color: #5b7fb9;
-}
-
-main section:nth-child(4) dd {
-  margin-bottom: 0.5rem;
-  margin-left: 30px;
 }
 
 /* CALENDÁRIO E EVENTOS */
@@ -188,7 +217,7 @@ i {
   font-style: normal;
 }
 
-/* Seção de Noticias */
+/* SEÇÃO NOTICIAS */
 main section:nth-child(6) {
   display: flex;
   flex-wrap: wrap;
@@ -205,7 +234,7 @@ main section:nth-child(6) div {
   padding: 40px;
 }
 
-/* IMAGEM */
+/* Imagem */
 main section:nth-child(6) img {
   width: 55%;
   border-radius: 10px;
@@ -215,44 +244,44 @@ main section:nth-child(6) img {
   margin-right: 10px;
 }
 
-/* NOTICIA */
+/* Noticia */
 main section:nth-child(6) article {
   width: 55%;
   padding-left: 0.5rem;
 }
 
-/* TITULO */
+/* Título */
 main section:nth-child(6) article h2 {
   color: black;
 }
 
-/* PUBLICADO */
+/* Publicado */
 main section:nth-child(6) article p {
   margin-top: 2rem;
   font-weight: bold;
 }
 
-/* DATA */
+/* Data */
 main section:nth-child(6) article i {
   color: var(--color-third);
   font-style: normal;
   font-weight: lighter;
 }
 
-/* HORA */
+/* Hora */
 main section:nth-child(6) article span {
   color: var(--color-primary);
   font-weight: lighter;
 }
 
-/* BOTÃO DE INSCRIÇÃO ACTION e IFES*/
+/* Seção de Inscrição*/
 main section:nth-child(7) {
   border: solid 1px white;
   background-color: var(--color-third);
 }
 
 /* Texto imagem e titulo */
-.ligaFlex {
+.divNoticias{
   display: flex !important;
   flex-wrap: wrap;
   justify-content: center;
@@ -260,13 +289,15 @@ main section:nth-child(7) {
   margin: 120px 10%;
 }
 
-.ligaFlex div:nth-child(1) {
+
+.divNoticias div:nth-child(1){
   padding: 15px;
   width: 39%;
   margin-right: 20px;
 }
 
-.ligaFlex div:nth-child(1) h1 {
+
+.divNoticias div:nth-child(1) h1{
   margin-bottom: 1.3rem;
   text-align: center;
   font-family: var(--font-padrao);
@@ -274,11 +305,12 @@ main section:nth-child(7) {
   text-shadow: #333 2px 2px 2px;
 }
 
-.ligaFlex div:nth-child(1) hr {
+
+.divNoticias div:nth-child(1) hr{
   margin-bottom: 1rem;
 }
 
-.ligaFlex div:nth-child(1) article {
+.divNoticias div:nth-child(1) article{
   color: white;
   padding: 15px 5%;
   line-height: 1.5rem;
@@ -286,7 +318,7 @@ main section:nth-child(7) {
   text-align: center;
 }
 
-.ligaFlex div:nth-child(1) article p {
+.divNoticias div:nth-child(1) article p{
   text-align: center;
   margin-top: 0.8rem;
   font-weight: bolder;
@@ -295,21 +327,23 @@ main section:nth-child(7) {
 }
 
 /* arrow para direita */
-.ligaFlex .seta {
+
+.divNoticias .seta{
   width: 20%;
   display: flex;
   justify-content: center;
 }
-.ligaFlex .seta > img {
+
+.divNoticias .seta>img{
   width: 20%;
 }
 
 /* vantagens de se fazer o reprograma-se */
-.ligaFlex div:nth-child(3) {
+.divNoticias div:nth-child(3){
   width: 37%;
 }
 
-.ligaFlex div:nth-child(3) p {
+.divNoticias div:nth-child(3) p{
   text-align: center;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
@@ -318,19 +352,22 @@ main section:nth-child(7) {
   text-shadow: #333 2px 2px 2px;
 }
 
-.ligaFlex div:nth-child(3) p::before {
+
+.divNoticias div:nth-child(3) p::before{
   content: url(../img/imgs/svgs/check.svg);
   margin-right: 0.5rem;
 }
 
-.ligaFlex div:nth-child(4) {
+
+.divNoticias div:nth-child(4){
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 /* Botão de inscrição */
-.ligaFlex div:nth-child(4) a {
+
+.divNoticias div:nth-child(4) a{
   background-color: #1a7fbe;
   color: white;
   padding: 15px 120px;
@@ -342,11 +379,12 @@ main section:nth-child(7) {
   margin-top: 2.3rem;
 }
 
-.ligaFlex div:nth-child(4) a:hover {
+
+.divNoticias div:nth-child(4) a:hover{
   background-color: #1a7fbe66;
 }
 
-.ligaFlex div:nth-child(4) a:active {
+.divNoticias div:nth-child(4) a:active{
   position: relative;
   left: 0.3rem;
   top: 0.3rem;
