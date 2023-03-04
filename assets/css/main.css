@@ -1,7 +1,6 @@
 /*Todas as seções do main*/
 
 main section:nth-child(1) {
-  border: solid 3px #000;
 }
 
 main section:nth-child(2) {
@@ -253,7 +252,7 @@ main section:nth-child(7) {
 }
 
 /* Texto imagem e titulo */
-.ligaFlex{
+.ligaFlex {
   display: flex !important;
   flex-wrap: wrap;
   justify-content: center;
@@ -261,13 +260,13 @@ main section:nth-child(7) {
   margin: 120px 10%;
 }
 
-.ligaFlex div:nth-child(1){
+.ligaFlex div:nth-child(1) {
   padding: 15px;
   width: 39%;
   margin-right: 20px;
 }
 
-.ligaFlex div:nth-child(1) h1{
+.ligaFlex div:nth-child(1) h1 {
   margin-bottom: 1.3rem;
   text-align: center;
   font-family: var(--font-padrao);
@@ -275,63 +274,63 @@ main section:nth-child(7) {
   text-shadow: #333 2px 2px 2px;
 }
 
-.ligaFlex div:nth-child(1) hr{
+.ligaFlex div:nth-child(1) hr {
   margin-bottom: 1rem;
 }
 
-.ligaFlex div:nth-child(1) article{
+.ligaFlex div:nth-child(1) article {
   color: white;
   padding: 15px 5%;
   line-height: 1.5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
-.ligaFlex div:nth-child(1) article p{
+.ligaFlex div:nth-child(1) article p {
   text-align: center;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   font-weight: bolder;
   font-size: 20px;
   color: var(--color-primary);
 }
 
 /* arrow para direita */
-.ligaFlex .seta{
+.ligaFlex .seta {
   width: 20%;
   display: flex;
   justify-content: center;
 }
-.ligaFlex .seta>img{
+.ligaFlex .seta > img {
   width: 20%;
 }
 
 /* vantagens de se fazer o reprograma-se */
-.ligaFlex div:nth-child(3){
+.ligaFlex div:nth-child(3) {
   width: 37%;
 }
 
-.ligaFlex div:nth-child(3) p{
+.ligaFlex div:nth-child(3) p {
   text-align: center;
   line-height: 1.5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   margin-bottom: 1.3rem;
   color: white;
   text-shadow: #333 2px 2px 2px;
 }
 
-.ligaFlex div:nth-child(3) p::before{
+.ligaFlex div:nth-child(3) p::before {
   content: url(../img/imgs/svgs/check.svg);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
-.ligaFlex div:nth-child(4){
+.ligaFlex div:nth-child(4) {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 /* Botão de inscrição */
-.ligaFlex div:nth-child(4) a{
+.ligaFlex div:nth-child(4) a {
   background-color: #1a7fbe;
   color: white;
   padding: 15px 120px;
@@ -343,12 +342,12 @@ main section:nth-child(7) {
   margin-top: 2.3rem;
 }
 
-.ligaFlex div:nth-child(4) a:hover{
+.ligaFlex div:nth-child(4) a:hover {
   background-color: #1a7fbe66;
 }
 
-.ligaFlex div:nth-child(4) a:active{
+.ligaFlex div:nth-child(4) a:active {
   position: relative;
-  left: .3rem;
-  top: .3rem;
+  left: 0.3rem;
+  top: 0.3rem;
 }
