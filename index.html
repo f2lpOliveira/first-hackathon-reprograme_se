@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/footer.css" />
   </head>
   <body>
-    <header role="banner">
+    <header role="banner" class="fixed-header">
       <div class="header-container">
         <h1>
           <a href="/" title="Página inicial">
@@ -28,7 +28,7 @@
           <ul class="links-internos">
             <li>
               <a
-                href="#"
+                href="#noticias"
                 class="link-noticias"
                 title="Ir para a seção de notícias"
                 >Notícias</a
@@ -190,9 +190,107 @@
         </dl>
       </section>
       <!-- CALENDARIO DE EVENTOS -->
-      <section></section>
-      <!-- NOTICIAS  -->
       <section>
+        <h2>Calendário de Eventos</h2>
+        <div class="calendar">
+          <div class="month">
+            <div class="month-header">
+              <button class="prev-month">&#8249;</button>
+              <h3>Março 2023</h3>
+              <button class="next-month">&#8250;</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Dom</th>
+                  <th>Seg</th>
+                  <th>Ter</th>
+                  <th>Qua</th>
+                  <th>Qui</th>
+                  <th>Sex</th>
+                  <th>Sáb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="events">
+            <div class="event">
+              <h4>Evento 1</h4>
+              <p>Descrição do evento 1</p>
+              <p><i>Data:</i> 15 de março de 2023</p>
+            </div>
+            <div class="event">
+              <h4>Evento 2</h4>
+              <p>Descrição do evento 2</p>
+              <p><i>Data:</i> 20 de março de 2023</p>
+            </div>
+            <div class="event">
+              <h4>Evento 3</h4>
+              <p>Descrição do evento 3</p>
+              <p><i>Data:</i> 25 de março de 2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTICIAS  -->
+      <section id="noticias">
         <div>
           <img src="assets/img/imgs/jpg/Otimizado-codeImg.jpg" alt="" />
           <article>
