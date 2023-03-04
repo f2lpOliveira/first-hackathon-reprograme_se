@@ -102,9 +102,93 @@ main section:nth-child(4) dd {
   margin-left: 30px;
 }
 
+/* CALENDÁRIO E EVENTOS */
 main section:nth-child(5) {
-  border: solid 3px #000;
+  margin: 20px auto;
+  max-width: 800px;
 }
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.month-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.prev-month,
+.next-month {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+td:not(:empty):hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.event {
+  width: calc(33.33% - 10px);
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+i {
+  font-style: normal;
+}
+
 /* Seção de Noticias */
 main section:nth-child(6) {
   display: flex;
