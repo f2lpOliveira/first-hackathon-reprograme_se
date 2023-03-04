@@ -3,6 +3,8 @@
   --color-primary: #1a7fbe;
   --color-secondary: #5b7fb9;
   --color-third: #c27fb1;
+  --color-text-primary: #000000;
+  --color-text-secondary: #666666;
 }
 
 * {
