@@ -25,9 +25,24 @@ header nav ul li a {
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 }
 
 header nav ul li a:hover {
-  color: var(--color-secondary);
-  text-decoration: underline;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-inscricao {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.link-noticias {
+  background-color: var(--color-third);
+  border-color: var(--color-third);
 }

@@ -17,7 +17,7 @@ main section:nth-child(2) {
   border-radius: 10px;
   border: 1px solid #ccc;
   padding: 10px;
-  flex-basis: 33.33%;
+  flex-basis: calc(33% - 20px);
 }
 .depoimento img {
   width: 100px;
@@ -27,13 +27,17 @@ main section:nth-child(2) {
 }
 .depoimento .info {
   text-align: right;
+  flex-grow: 1;
 }
 .depoimento h2 {
   margin: 0;
+  margin-bottom: 5px;
+  text-align: left;
 }
 .depoimento h4 {
-  margin: 5px 0;
-  color: #666;
+  margin: 0;
+  color: var(--color-text-secondary);
+  text-align: left;
 }
 .depoimento .descricao {
   text-align: justify;
@@ -47,8 +51,8 @@ ul.depoimentos {
   justify-content: space-between;
 }
 ul.depoimentos li {
-  margin-bottom: 40px;
-  width: 33.33%;
+  margin: 0px 10px 40px;
+  width: calc(33% - 20px);
 }
 
 /* FAQ */
@@ -118,9 +122,8 @@ main section:nth-child(6) div {
   padding: 40px;
 }
 
-
 /* IMAGEM */
-main section:nth-child(6) img{
+main section:nth-child(6) img {
   width: 55%;
   border-radius: 10px;
   outline: 3px solid var(--color-third);
@@ -129,34 +132,32 @@ main section:nth-child(6) img{
   margin-right: 10px;
 }
 
-
 /* NOTICIA */
-main section:nth-child(6) article{
+main section:nth-child(6) article {
   width: 55%;
   padding-left: 0.5rem;
 }
 
-
 /* TITULO */
-main section:nth-child(6) article h2{
+main section:nth-child(6) article h2 {
   color: black;
 }
 
 /* PUBLICADO */
-main section:nth-child(6) article p{
+main section:nth-child(6) article p {
   margin-top: 2rem;
   font-weight: bold;
 }
 
 /* DATA */
-main section:nth-child(6) article i{
+main section:nth-child(6) article i {
   color: var(--color-third);
   font-style: normal;
   font-weight: lighter;
 }
 
 /* HORA */
-main section:nth-child(6) article span{
+main section:nth-child(6) article span {
   color: var(--color-primary);
   font-weight: lighter;
 }
