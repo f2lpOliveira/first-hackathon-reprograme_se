@@ -1,40 +1,52 @@
 /*Todas as seções do main*/
 
 /* APRESENTAÇÃO */
-main section:nth-child(1) {
-}
-
 .landing-section {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   padding: 60px 0;
   text-align: center;
 }
 .landing-block {
   max-width: 800px;
   margin: 0 auto;
-  position: relative;
 }
 .landing-title {
   font-size: 48px;
   margin: 0;
+  color: var(--color-white);
 }
 .landing-description {
   font-size: 24px;
   margin-top: 10px;
+  color: red;
+  color: var(--color-white);
 }
 .landing-formation {
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 20px;
+  color: var(--color-white);
 }
 .landing-more-info {
+  display: inline-block;
+  width: auto;
+  padding: 5px 35px;
   font-size: 18px;
   margin-bottom: 30px;
+  color: var(--color-white);
+  text-shadow: #333 2px 2px 1px;
+  background-color: var(--color-third);
+  border-radius: 10px;
+  box-shadow: #000 2px 2px 4px;
 }
 
 .landing-button {
   display: inline-block;
-  background-color: #da0037;
+  background-image: linear-gradient(
+  to right,
+  var(--color-primary),
+  var(--color-third)
+  );
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -42,26 +54,27 @@ main section:nth-child(1) {
   padding: 20px 40px;
   border-radius: 30px;
   text-decoration: none;
-  margin-bottom: 40px;
-  transition: background-color 0.3s ease;
+  margin-bottom: .3rem;
 }
+
 .landing-button:hover {
-  background-color: #ff2b67;
+  opacity: 0.8;
 }
+
 .landing-image {
   max-width: 100%;
-  margin-top: 50px;
+  margin-top: .4rem;
 }
-.landing-background {
+/* .landing-background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #da0037;
+  background-color: var(--color-primary);
   opacity: 0.2;
   z-index: -1;
-}
+} */
 
 /* GRADE CURRÍCULAR */
 main section:nth-child(2) {
@@ -70,15 +83,17 @@ main section:nth-child(2) {
 
 /* DEPOIMENTOS  */
 .depoimento {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #CCDAD1;
   padding: 10px;
   flex-basis: calc(33% - 20px);
+  margin: 2rem 20px;
 }
+
 .depoimento img {
   width: 100px;
   height: 100px;
@@ -88,6 +103,7 @@ main section:nth-child(2) {
 .depoimento .info {
   text-align: right;
   flex-grow: 1;
+  color: var(--color-text-primary);
 }
 .depoimento h2 {
   margin: 0;
@@ -99,9 +115,21 @@ main section:nth-child(2) {
   color: var(--color-text-secondary);
   text-align: left;
 }
-.depoimento .descricao {
+
+/* .depoimento .descricao {
   text-align: justify;
+  color: red;
+} */
+
+.descricao{
+  font-family: var(--font-secondary-open-sans);
+  margin: 16px 20px;
+  line-height: 1.6rem;
+  letter-spacing: calc(0.1rem - 1px);
+  color: var(--color-text-third);
+  font-size: 1em;
 }
+
 ul.depoimentos {
   list-style: none;
   padding: 0;
@@ -116,39 +144,41 @@ ul.depoimentos li {
 }
 
 /* FAQ */
-main section:nth-child(4) {
+/* main section:nth-child(4) {
   border: solid 1px white;
-}
+} */
 
-main section:nth-child(4) > h1 {
+#faq > h1{
+  text-align: center;
   padding: 15px;
   max-width: 800px;
   margin: 0 auto 10px;
   font-size: 32px;
   font-family: sans-serif;
-  color: #5b7fb9;
+  color: var(--color-text-primary);
 }
 
-main section:nth-child(4) > dl {
+#faq > dl {
   padding: 15px;
   display: block;
   width: 80%;
   margin: 0 auto;
 }
 
-main section:nth-child(4) dt {
+#faq dt {
   margin-bottom: 1.2rem;
   font-weight: bolder;
-  color: var(--color-third);
-  font-size: 23px;
+  color: var(--color-text-secondary);
+  font-size: 1.4em;
   letter-spacing: 0.1rem;
   cursor: pointer;
 }
-main section:nth-child(4) dt:active {
+#faq dt:active {
   opacity: 0.4;
 }
 
-main section:nth-child(4) dd {
+#faq dd {
+  color: var(--color-text-third);
   padding-bottom: 1.3rem;
   margin-left: 30px;
   text-align: left;
@@ -156,6 +186,27 @@ main section:nth-child(4) dd {
   /* word-spacing: 2px; */
   letter-spacing: calc(0.1rem - 1px);
   display: none;
+  font-size: 1.2em;
+}
+
+#faq dt::after {
+  content: url(../img/imgs/svgs/arrow-90deg-up.svg);
+  margin-left: 0.3rem;
+}
+
+#faq dt.ativo::after {
+  content: url(../img/imgs/svgs/arrow-90deg-down.svg);
+  margin-left: 0.3rem;
+}
+
+#faq dt::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: var(--color-text-secondary);
+  border-radius: 2px;
 }
 
 .motrarRespostaFaq {
@@ -172,34 +223,18 @@ main section:nth-child(4) dd {
   }
 }
 
-main section:nth-child(4) dt::after {
-  content: url(../img/imgs/svgs/arrow-90deg-up.svg);
-  margin-left: 0.3rem;
-}
-
-main section:nth-child(4) dt.ativo::after {
-  content: url(../img/imgs/svgs/arrow-90deg-down.svg);
-  margin-left: 0.3rem;
-}
-
-main section:nth-child(4) dt::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 10px;
-  margin-right: 10px;
-  background-color: #5b7fb9;
-}
 
 /* CALENDÁRIO E EVENTOS */
-main section:nth-child(5) {
+#calendarioEventos {
   margin: 20px auto;
   max-width: 800px;
 }
 
-h2 {
+#calendarioEventos h2 {
   font-size: 32px;
   text-align: center;
+  color: var(--color-white);
+  margin-bottom: 1.2rem;
 }
 
 .calendar {
@@ -221,6 +256,7 @@ h2 {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 10px;
+  color: var(--color-text-secondary);
 }
 
 .prev-month,
@@ -239,11 +275,12 @@ thead {
   background-color: #ddd;
 }
 
-th,
-td {
+.month th,
+.month td {
   padding: 10px;
   text-align: center;
   border: 1px solid #ddd;
+  color: var(--color-text-secondary);
 }
 
 td:not(:empty):hover {
@@ -265,21 +302,23 @@ td:not(:empty):hover {
   border-radius: 5px;
 }
 
-h4 {
+.event h4 {
   margin-top: 0;
   font-size: 20px;
+  color: var(--color-primary);
 }
 
-p {
+.event p {
   margin: 10px 0;
+  font-family: var(--font-secondary-open-sans);
 }
 
-i {
+.event i {
   font-style: normal;
 }
 
 /* SEÇÃO NOTICIAS */
-main section:nth-child(6) {
+main #noticias {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 200px;
@@ -287,7 +326,7 @@ main section:nth-child(6) {
   padding: 15px;
 }
 
-main section:nth-child(6) div {
+main #noticias div {
   width: 50%;
   display: flex;
   align-items: center;
@@ -296,53 +335,56 @@ main section:nth-child(6) div {
 }
 
 /* Imagem */
-main section:nth-child(6) img {
+main #noticias img {
   width: 55%;
   border-radius: 10px;
-  outline: 3px solid var(--color-third);
+  outline: 3px solid var(--color-borda-depoimento);
   outline-offset: 2px;
   border-radius: 3px;
   margin-right: 10px;
 }
 
 /* Noticia */
-main section:nth-child(6) article {
+main #noticias article {
   width: 55%;
   padding-left: 0.5rem;
+  font-family: var(--font-secondary-open-sans);
+  color: var(--color-text-primary);
 }
 
 /* Título */
-main section:nth-child(6) article h2 {
-  color: black;
+main #noticias h2 {
+  color: var(--color-text-primary);
+  font-family: var(--font-secondary-open-sans);
 }
 
 /* Publicado */
-main section:nth-child(6) article p {
+main #noticias p {
   margin-top: 2rem;
   font-weight: bold;
 }
 
 /* Data */
-main section:nth-child(6) article i {
-  color: var(--color-third);
+main #noticias i {
+  color: var(--color-text-third);
   font-style: normal;
   font-weight: lighter;
 }
 
 /* Hora */
-main section:nth-child(6) article span {
-  color: var(--color-primary);
+main #noticias span {
+  color: var(--color-text-secondary);
   font-weight: lighter;
 }
 
 /* Seção de Inscrição*/
-main section:nth-child(7) {
+/* main section:nth-child(7) {
   border: solid 1px white;
   background-color: var(--color-third);
-}
+} */
 
 /* Texto imagem e titulo */
-.divNoticias {
+.divInscricao {
   display: flex !important;
   flex-wrap: wrap;
   justify-content: center;
@@ -350,57 +392,53 @@ main section:nth-child(7) {
   margin: 120px 10%;
 }
 
-.divNoticias div:nth-child(1) {
+.divInscricao div:nth-child(1) {
   padding: 15px;
   width: 39%;
   margin-right: 20px;
 }
 
-.divNoticias div:nth-child(1) h1 {
+.divInscricao div:nth-child(1) h1 {
   margin-bottom: 1.3rem;
   text-align: center;
-  font-family: var(--font-padrao);
-  color: white;
+  color: var( --color-text-primary);
   text-shadow: #333 2px 2px 2px;
 }
 
-.divNoticias div:nth-child(1) hr {
-}
-
-.divNoticias div:nth-child(1) article {
-  color: white;
+.divInscricao div:nth-child(1) article {
+  color: var(--color-text-primary);
   padding: 15px 5%;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
   text-align: center;
 }
 
-.divNoticias div:nth-child(1) article p {
+.divInscricao div:nth-child(1) article p {
   text-align: center;
   margin-top: 0.8rem;
   font-weight: bolder;
   font-size: 20px;
-  color: var(--color-primary);
+  color: var(--color-text-secondary);
 }
 
 /* arrow para direita */
 
-.divNoticias .seta {
+.divInscricao .seta {
   width: 20%;
   display: flex;
   justify-content: center;
 }
 
-.divNoticias .seta > img {
+.divInscricao .seta > img {
   width: 20%;
 }
 
 /* vantagens de se fazer o reprograma-se */
-.divNoticias div:nth-child(3) {
+.divInscricao div:nth-child(3) {
   width: 37%;
 }
 
-.divNoticias div:nth-child(3) p {
+.divInscricao div:nth-child(3) p {
   text-align: center;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
@@ -409,12 +447,12 @@ main section:nth-child(7) {
   text-shadow: #333 2px 2px 2px;
 }
 
-.divNoticias div:nth-child(3) p::before {
+.divInscricao div:nth-child(3) p::before {
   content: url(../img/imgs/svgs/check.svg);
   margin-right: 0.5rem;
 }
 
-.divNoticias div:nth-child(4) {
+.divInscricao div:nth-child(4) {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -422,7 +460,7 @@ main section:nth-child(7) {
 
 /* Botão de inscrição */
 
-.divNoticias div:nth-child(4) a {
+.divInscricao div:nth-child(4) a {
   background-color: #1a7fbe;
   color: white;
   padding: 15px 120px;
@@ -434,11 +472,11 @@ main section:nth-child(7) {
   margin-top: 2.3rem;
 }
 
-.divNoticias div:nth-child(4) a:hover {
+.divInscricao div:nth-child(4) a:hover {
   background-color: #1a7fbe66;
 }
 
-.divNoticias div:nth-child(4) a:active {
+.divInscricao div:nth-child(4) a:active {
   position: relative;
   left: 0.3rem;
   top: 0.3rem;
