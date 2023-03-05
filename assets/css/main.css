@@ -365,6 +365,16 @@ td:not(:empty):hover {
 }
 
 /* SEÇÃO NOTICIAS */
+#noticias .titulo{
+  width: 100%;
+  font-size: 32px;
+  color: var(--color-text-primary);
+}
+
+.iconeNoticia{
+  margin-left: .4rem;
+}
+
 main #noticias {
   display: flex;
   flex-wrap: wrap;
@@ -530,3 +540,17 @@ main #noticias span {
 }
 
 /* ___________________________ */
+
+
+/* RESPONSIVIDADE */
+
+/* @media (max-width: 360px){
+
+} */
+
+
+@media (max-width: 800px){
+  #noticias div{
+    width: 100% !important;
+  }
+}
