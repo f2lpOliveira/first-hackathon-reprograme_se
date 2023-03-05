@@ -558,4 +558,20 @@ main #noticias span {
   #noticias img{
     width: 220px !important;
   }
+  form{
+    flex-basis: 90% !important;
+  }
+  footer img{
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* PARA A PARTE DE NOTICIAS */
+@media (max-width: 1040px){
+  #noticias div{
+    padding: 40px 10px !important;
+  }
+  #noticias img{
+    width: 200px !important;
+  }
 }
