@@ -1,0 +1,7 @@
+.preenchimentoCorreto{
+	border: solid 4px lightgreen !important;
+}
+
+.preenchimentoIncorreto{
+	border: solid 4px coral !important;
+}
