@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 1;
 }
 
 .header-wrapper {
@@ -42,7 +42,7 @@ header nav ul li {
 
 header nav ul li a {
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: white;
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
