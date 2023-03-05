@@ -120,10 +120,10 @@
 }
 
 /* DEPOIMENTOS  */
-#depoimentos{
- margin: 3rem 0;
+#depoimentos {
+  margin: 3rem 0;
 }
-#depoimentos .iconeDepoimento{
+#depoimentos .iconeDepoimento {
   margin-left: 1.4rem;
 }
 #depoimentos .titulo {
@@ -624,8 +624,7 @@ main #noticias span {
   }
 }
 
-
-.btaoSubirAoTopo{
+.btaoSubirAoTopo {
   padding: 5px 12px;
   color: var(--color-white);
   position: fixed;
@@ -633,11 +632,10 @@ main #noticias span {
   bottom: 8%;
   z-index: 1;
   font-size: 2rem;
-  background-color: var(--color-third);
+  background-color: var(--color-four);
   border-radius: 4%;
-
 }
 
-.btaoSubirAoTopo:hover{
+.btaoSubirAoTopo:hover {
   opacity: 0.6;
 }
