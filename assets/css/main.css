@@ -550,7 +550,12 @@ main #noticias span {
 
 
 @media (max-width: 800px){
+
   #noticias div{
     width: 100% !important;
+    padding: 40px 10px !important;
+  }
+  #noticias img{
+    width: 220px !important;
   }
 }
