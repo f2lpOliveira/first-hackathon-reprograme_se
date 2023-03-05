@@ -7,7 +7,7 @@ import {
   increaseFontSize,
   decreaseFontSize,
 } from "./pageTheme.js";
-import manipulaCalendario from "./manipulaCalendario.js";
+import manipulateCalender from "./manipulateCalender.js";
 // // ACESSIBILIDADE TEMA CLARO E ESCURO
 // import themeButton from "./pageTheme.js";
 

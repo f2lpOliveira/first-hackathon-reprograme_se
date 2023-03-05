@@ -1,4 +1,4 @@
-function manipulaCalendario() {
+function manipulateCalender() {
   // selecionando o mês atual
   let currentMonth = new Date().getMonth();
 
@@ -64,6 +64,6 @@ function manipulaCalendario() {
   updateCalendar();
 }
 
-manipulaCalendario();
+manipulateCalender();
 
-export default manipulaCalendario;
+export default manipulateCalender;
