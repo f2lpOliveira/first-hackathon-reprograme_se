@@ -13,6 +13,5 @@ function acordionList(){
 	todasPerguntasFaq.forEach(dt=>dt.addEventListener("click", mostrarResposta));
 
 }
-acordionList();
 
 export default acordionList;
