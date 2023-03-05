@@ -120,6 +120,19 @@
 }
 
 /* DEPOIMENTOS  */
+#depoimentos{
+ margin: 3rem 0;
+}
+#depoimentos .iconeDepoimento{
+  margin-left: 1.4rem;
+}
+#depoimentos .titulo {
+  width: 100%;
+  text-align: center;
+  color: var(--color-text-primary);
+  font-size: 32px;
+}
+
 .depoimento {
   display: flex;
   flex-direction: column;
@@ -357,7 +370,7 @@ td:not(:empty):hover {
 }
 
 .iconeNoticia {
-  margin-left: 0.4rem;
+  margin-left: 1.4rem;
 }
 
 main #noticias {
