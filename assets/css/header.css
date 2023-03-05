@@ -67,3 +67,29 @@ header nav ul li a:hover {
   background-color: var(--color-third);
   border-color: var(--color-third);
 }
+
+/* Regras de Responsividade Para Telas Inferiores a 800px */
+
+@media (max-width: 800px) {
+  .logotipo {
+    width: 120px;
+  }
+
+  header nav ul li {
+    margin: 0 10px;
+  }
+  /* Regras de Responsividade Para Telas Inferiores a 360px */
+
+  .logotipo {
+    width: 80px;
+  }
+
+  header nav ul li {
+    margin: 0 5px;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+}

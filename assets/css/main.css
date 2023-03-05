@@ -65,16 +65,6 @@
   max-width: 100%;
   margin-top: 0.4rem;
 }
-/* .landing-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-primary);
-  opacity: 0.2;
-  z-index: -1;
-} */
 
 /* GRADE CURRÍCULAR */
 .content {
@@ -131,15 +121,17 @@
 
 /* DEPOIMENTOS  */
 .depoimento {
-  display: block;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px;
+  padding: 20px;
   border-radius: 10px;
   border: 2px solid #ccdad1;
-  padding: 10px;
+  /* padding: 10px;
   flex-basis: calc(33% - 20px);
-  margin: 2rem 20px;
+  margin: 2rem 20px; */
 }
 
 .depoimento img {
@@ -149,33 +141,29 @@
   border-radius: 50%;
 }
 .depoimento .info {
-  text-align: right;
-  flex-grow: 1;
+  text-align: center;
+  /* flex-grow: 1; */
+  margin-bottom: 10px;
   color: var(--color-text-primary);
 }
 .depoimento h2 {
   margin: 0;
   margin-bottom: 5px;
-  text-align: left;
+  /* text-align: left; */
 }
 .depoimento h4 {
   margin: 0;
   color: var(--color-text-secondary);
-  text-align: left;
+  /* text-align: left; */
 }
-
-/* .depoimento .descricao {
-  text-align: justify;
-  color: red;
-} */
-
 .descricao {
   font-family: var(--font-secondary-open-sans);
-  margin: 16px 20px;
+  margin: 0;
+  padding: 10px;
   line-height: 1.6rem;
   letter-spacing: calc(0.1rem - 1px);
   color: var(--color-text-third);
-  font-size: 1em;
+  /* font-size: 1em; */
 }
 
 ul.depoimentos {
@@ -187,14 +175,11 @@ ul.depoimentos {
   justify-content: space-between;
 }
 ul.depoimentos li {
-  margin: 0px 10px 40px;
-  width: calc(33% - 20px);
+  /* margin: 0px 10px 40px;
+  width: calc(33% - 20px); */
+  width: 100%;
+  margin-bottom: 40px;
 }
-
-/* FAQ */
-/* main section:nth-child(4) {
-  border: solid 1px white;
-} */
 
 #faq > h1 {
   text-align: center;
@@ -365,14 +350,14 @@ td:not(:empty):hover {
 }
 
 /* SEÇÃO NOTICIAS */
-#noticias .titulo{
+#noticias .titulo {
   width: 100%;
   font-size: 32px;
   color: var(--color-text-primary);
 }
 
-.iconeNoticia{
-  margin-left: .4rem;
+.iconeNoticia {
+  margin-left: 0.4rem;
 }
 
 main #noticias {
@@ -541,13 +526,23 @@ main #noticias span {
 
 /* ___________________________ */
 
+/* RESPONSIVIDADE SEÇÃO DEPOIMENTOS*/
 
-/* RESPONSIVIDADE */
+@media (min-width: 360px) and (max-width: 800px) {
+  ul.depoimentos li {
+    width: 100%;
+  }
+  .depoimento {
+    margin: 20px 0;
+  }
+}
+@media (min-width: 801px) {
+  ul.depoimentos li {
+    width: calc(33% - 20px);
+  }
+}
 
-/* @media (max-width: 360px){
-
-} */
-
+/* RESPONSIVIDADE SEÇÃO NOTÍCIAS*/
 
 @media (max-width: 800px){
 
@@ -555,6 +550,7 @@ main #noticias span {
     width: 100% !important;
     padding: 40px 10px !important;
   }
+  
   #noticias img{
     width: 220px !important;
   }
