@@ -432,12 +432,6 @@ main #noticias span {
   font-weight: lighter;
 }
 
-/* Seção de Inscrição*/
-/* main section:nth-child(7) {
-  border: solid 1px white;
-  background-color: var(--color-third);
-} */
-
 /* Texto imagem e titulo */
 .divInscricao {
   display: flex !important;
@@ -555,32 +549,77 @@ main #noticias span {
   }
 }
 
+/* RESPONSIVIDADE SEÇÃO GRADE CURRÍCULAR*/
+
+@media (max-width: 800px) {
+  .image-wrapper,
+  .text-wrapper {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .text-wrapper h3 {
+    font-size: 1.2rem;
+  }
+  .text-wrapper p {
+    font-size: 1rem;
+  }
+
+  .text-wrapper a {
+    font-size: 1rem;
+  }
+}
+
+/* RESPONSIVIDADE SEÇÃO CALENDÁRIO*/
+
+@media (max-width: 800px) {
+  .month {
+    width: 90%;
+  }
+}
+
+@media (max-width: 460px) {
+  #calendarioEventos h2 {
+    font-size: 24px;
+  }
+  .month-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prev-month,
+  .next-month {
+    font-size: 16px;
+  }
+  .event {
+    width: 100%;
+  }
+}
+
 /* RESPONSIVIDADE SEÇÃO NOTÍCIAS*/
 
-@media (max-width: 800px){
-
-  #noticias div{
+@media (max-width: 800px) {
+  #noticias div {
     width: 100% !important;
     padding: 40px 10px !important;
   }
-  
-  #noticias img{
+
+  #noticias img {
     width: 220px !important;
   }
-  form{
+  form {
     flex-basis: 90% !important;
   }
-  footer img{
+  footer img {
     margin-bottom: 1.2rem;
   }
 }
 
 /* PARA A PARTE DE NOTICIAS */
-@media (max-width: 1040px){
-  #noticias div{
+@media (max-width: 1040px) {
+  #noticias div {
     padding: 40px 10px !important;
   }
-  #noticias img{
+  #noticias img {
     width: 200px !important;
   }
 }
