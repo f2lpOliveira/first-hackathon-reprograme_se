@@ -54,7 +54,7 @@ function validateForm(){
 	// Validação textArea
 	const texArea = form.querySelector("#mensagemContato");
 	console.log(texArea.value);
-	texArea.addEventListener("blur", (e)=>{
+	texArea.addEventListener("input", (e)=>{
 		console.log(e.target.value);
 		if(e.target.value === ""){
 			e.target.classList.remove("preenchimentoCorreto");
