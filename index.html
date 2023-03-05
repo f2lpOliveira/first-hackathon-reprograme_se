@@ -51,9 +51,11 @@
           </nav>
         </div>
       </div>
-      <button onclick="increaseFontSize()">Aumentar fonte</button>
-      <button onclick="decreaseFontSize()">Diminuir fonte</button>
-      <button onclick="toggleTheme()">Alternar tema</button>
+      <div class="btnAcessibilidade">
+        <button data-aumenta-fonte>Aumentar fonte</button>
+        <button data-diminui-fonte>Diminuir fonte</button>
+        <button data-altera-tema>Alternar tema</button>
+      </div>
     </header>
 
     <main class="sections">
@@ -481,6 +483,6 @@
       </form>
     </footer>
     <script type="module" src="/assets/js/script.js"></script>
-    <script src="/assets/js/pageTheme.js"></script>
+    <!-- <script src="/assets/js/pageTheme.js"></script> -->
   </body>
 </html>

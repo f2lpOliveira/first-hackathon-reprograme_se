@@ -51,3 +51,12 @@ const theme = localStorage.getItem("theme");
 if (theme) {
   document.querySelector("body").classList.add(theme);
 }
+
+//Adiciona um EVENTLISTENER ao botão aumentaFonte.
+document.querySelector("[data-aumenta-fonte]").addEventListener("click", increaseFontSize);
+//Adiciona um EVENTLISTENER ao botão diminuirFonte.
+document.querySelector("[data-diminui-fonte]").addEventListener("click", decreaseFontSize);
+//Adiciona um EVENTLISTENER ao botão alteraTema.
+document.querySelector("[data-altera-tema]").addEventListener("click", toggleTheme);
+
+export { toggleTheme, increaseFontSize, decreaseFontSize }
