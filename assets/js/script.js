@@ -2,7 +2,12 @@
 import scrollSuave from "./scrollSuave.js";
 import acordionList from "./acordionList.js";
 import validateForm from "./validacaoForm.js";
-import { toggleTheme, increaseFontSize, decreaseFontSize } from "./pageTheme.js"
+import {
+  toggleTheme,
+  increaseFontSize,
+  decreaseFontSize,
+} from "./pageTheme.js";
+import manipulaCalendario from "./manipulaCalendario.js";
 // // ACESSIBILIDADE TEMA CLARO E ESCURO
 // import themeButton from "./pageTheme.js";
 
