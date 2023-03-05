@@ -43,9 +43,9 @@
 .landing-button {
   display: inline-block;
   background-image: linear-gradient(
-  to right,
-  var(--color-primary),
-  var(--color-third)
+    to right,
+    var(--color-primary),
+    var(--color-third)
   );
   color: #fff;
   font-size: 20px;
@@ -54,7 +54,7 @@
   padding: 20px 40px;
   border-radius: 30px;
   text-decoration: none;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 .landing-button:hover {
@@ -63,7 +63,7 @@
 
 .landing-image {
   max-width: 100%;
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
 /* .landing-background {
   position: absolute;
@@ -77,8 +77,56 @@
 } */
 
 /* GRADE CURRÍCULAR */
-main section:nth-child(2) {
-  border: solid 3px #000;
+.content {
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.image-wrapper {
+  margin: 10px;
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-wrapper {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-wrapper h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.text-wrapper p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.text-wrapper a {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.1rem;
 }
 
 /* DEPOIMENTOS  */
@@ -88,7 +136,7 @@ main section:nth-child(2) {
   align-items: center;
   margin-bottom: 20px;
   border-radius: 10px;
-  border: 2px solid #CCDAD1;
+  border: 2px solid #ccdad1;
   padding: 10px;
   flex-basis: calc(33% - 20px);
   margin: 2rem 20px;
@@ -121,7 +169,7 @@ main section:nth-child(2) {
   color: red;
 } */
 
-.descricao{
+.descricao {
   font-family: var(--font-secondary-open-sans);
   margin: 16px 20px;
   line-height: 1.6rem;
@@ -148,7 +196,7 @@ ul.depoimentos li {
   border: solid 1px white;
 } */
 
-#faq > h1{
+#faq > h1 {
   text-align: center;
   padding: 15px;
   max-width: 800px;
@@ -222,7 +270,6 @@ ul.depoimentos li {
     opacity: 1;
   }
 }
-
 
 /* CALENDÁRIO E EVENTOS */
 #calendarioEventos {
@@ -401,7 +448,7 @@ main #noticias span {
 .divInscricao div:nth-child(1) h1 {
   margin-bottom: 1.3rem;
   text-align: center;
-  color: var( --color-text-primary);
+  color: var(--color-text-primary);
   text-shadow: #333 2px 2px 2px;
 }
 
@@ -481,3 +528,5 @@ main #noticias span {
   left: 0.3rem;
   top: 0.3rem;
 }
+
+/* ___________________________ */
