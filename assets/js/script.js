@@ -4,3 +4,6 @@ import acordionList from "./acordionList.js";
 
 // // ACESSIBILIDADE TEMA CLARO E ESCURO
 // import themeButton from "./pageTheme.js";
+
+scrollSuave();
+acordionList();
