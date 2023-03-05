@@ -12,6 +12,7 @@
     <link href="/assets/css/header.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/validacaoFormulario.css">
   </head>
   <body>
     <header role="banner" class="fixed-header">
@@ -380,7 +381,8 @@
       <form
         action="mailto:contato@reprogramese.com.br"
         method="POST"
-        enctype="text/plain">
+        enctype="text/plain"
+        data-validate-form>
         <div class="form-group">
           <label for="nomeCompleto">Nome e Sobrenome</label>
           <input
